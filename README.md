@@ -52,6 +52,8 @@ https://developers.cloudflare.com/workers-ai/models/
 | CF_GATEWAY     | Cloudflare AI Gateway URL          |    
 | OPENAI_API_KEY | OpenAI API Key (需要ChatGPT时填写)      |     
 | OPENAI_API_URL | 自定义OpenAI API请求地址 |
+| GROQ_API_KEY | Groq API Key (需要groq时填写)      |     
+| GROQ_API_URL | 自定义groq API请求地址 |
 | G_API_KEY      | Google AI API Key (需要GeminiPro时填写) | 
 | G_API_URL      | Google AI 反代 (不支持地区填写，或参考以下配置)     |    
 | PASSWORD       | 访问密码 (可选)                          |   
@@ -77,6 +79,14 @@ https://dash.cloudflare.com/
 - 填写名称和URL slug创建
 - 单击右上角API Endpoints
 - 复制您的Universal Endpoint(去掉末尾`/`)，设置环境变量
+
+
+#### GROQ_API_KEY
+https://console.groq.com/keys  
+可能无法直接访问，groq有免费的deepseek70b
+
+#### GROQ_API_URL
+默认为https://api.groq.com/openai/v1/chat/completions，可能无法直接访问
 
 #### G_API_KEY
 

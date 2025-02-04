@@ -79,6 +79,12 @@ export const uniModals: Model[] = [
         name: 'Gemini 1.5 Pro',
         provider: 'google',
         type: 'universal'
+    },
+    {
+        id: 'gemini-2.0-flash-exp',
+        name: 'Gemini 2.0 flash',
+        provider: 'google',
+        type: 'universal'
     }
 ]
 
@@ -86,6 +92,18 @@ export const textGenModels: Model[] = [{
     id: 'gpt-3.5-turbo',
     name: 'ChatGPT-3.5-turbo',
     provider: 'openai',
+    endpoint: 'chat/completions',
+    type: 'chat'
+}, {
+    id: 'gpt-4o',
+    name: 'ChatGPT-4o',
+    provider: 'openai',
+    endpoint: 'chat/completions',
+    type: 'chat'
+}, {
+    id: 'deepseek-r1-distill-llama-70b',
+    name: 'deepseek-70b',
+    provider: 'groq',
     endpoint: 'chat/completions',
     type: 'chat'
 }, {
